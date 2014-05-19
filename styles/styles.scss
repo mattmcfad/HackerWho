@@ -18,5 +18,85 @@ h1 {
 
 
 .photogrid {
+	width: 720px;
+	.student {
+		@include studentimgs;
+		float: left;
+	}
+	.id1 {
+		background: url();
+	}
+	.id2 {
+		background: url();
+	}
+	.id3 {
+		background: url();
+	}
+	.id4 {
+		background: url();
+	}
+	.id5 {
+		background: url();
+	}
+	.id6 {
+		background: url();
+	}
+	.id7 {
+		background: url();
+	}
+	.id8 {
+		background: url();
+	}
+	.id9 {
+		background: url();
+	}
+	.id10 {
+		background: url();
+	}
+	.id11{
+		background: url();
+	}
+	.id12 {
+		background: url();
+	}
+	.id13 {
+		background: url();
+	}
+	.id14 {
+		background: url();
+	}
+	.id15 {
+		background: url();
+	}
+	.id16 {
+		background: url();
+	}
+	.id17 {
+		background: url();
+	}
+	.id18 {
+		background: url();
+	}
+	.id19 {
+		background: url();
+	}
+	.id20 {
+		background: url();
+	}
+	.id21{
+		background: url();
+	}
+	.id22 {
+		background: url();
+	}
+	.id23 {
+		background: url();
+	}
+	.id24 {
+		background: url();
+	}
+
+}
+.selected {
 
 }
