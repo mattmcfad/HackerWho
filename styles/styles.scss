@@ -6,15 +6,132 @@
 	width: 120px;
 }
 
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+
+.clearfix:after {
+     content: " ";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+}
 
 h1 {
-	font-size: 40px;
+	font-size: 80px;
+	text-align: center;
 }
 
+.selected {
+	padding: 75px 0 ;
+	float: left;
+	width: 200px;
+	height: 480px;
+	border: 1px solid black;
+
+	h2 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	img {
+		width: 240px;
+		height: 240px;
+	}
+
+	p {
+		padding: 15px 10px;
+	}
 
 
-
+}
 
 .photogrid {
-	
+	width: 720px;
+	float: left;
+
+	.student {
+		@include studentimgs;
+		float: left;
+
+		&.id1 {
+			background: url(../images/Jenn-120x120.jpg);	
+		}
+		&.id2 {
+			background: url(../images/Emily-120x120.jpg);
+		}
+		&.id3 {
+			background: url(../images/Ray-120x120.jpg);
+		}
+		&.id4 {
+			background: url(../images/Vanessa-120x120.jpg);
+		}
+		&.id5 {
+			background: url(../images/Nerissa-120x120.jpg);
+		}
+		&.id6 {
+			background: url(../images/Rasin-120x120.jpg);
+		}
+		&.id7 {
+			background: url(../images/Logan-120x120.jpg);
+		}
+		&.id8 {
+			background: url(../images/Anna-120x120.jpg);
+		}
+		&.id9 {
+			background: url(../images/Daniel-120x120.jpg);
+		}
+		&.id10 {
+			background: url(../images/Corbin-120x120.jpg);
+		}
+		&.id11{
+			background: url(../images/Jessie-120x120.jpg);
+		}
+		&.id12 {
+			background: url(../images/Robin-120x120.jpg);
+		}
+		&.id13 {
+			background: url(../images/Jonny-120x120.jpg);
+		}
+		&.id14 {
+			background: url(../images/Lili-120x120.jpg);
+		}
+		&.id15 {
+			background: url(../images/Marg-120x120.jpg);
+		}
+		&.id16 {
+			background: url(../images/Meahgan-120x120.jpg);
+		}
+		&.id17 {
+			background: url(../images/Zoe-120x120.jpg);
+		}
+		&.id18 {
+			background: url(../images/Wisam-120x120.jpg);
+		}
+		&.id19 {
+			background: url(../images/Simon-120x120.jpg);
+		}
+		&.id20 {
+			background: url(../images/Sarah-120x120.jpg);
+		}
+		&.id21{
+			background: url(../images/Victoria-120x120.jpg);
+		}
+		&.id22 {
+			background: url(../images/Matt-120x120.jpg);
+		}
+		&.id23 {
+			background: url(../images/Krisztina-120x120.jpg);
+		}
+		&.id24 {//elyse
+			text-align: center;
+			padding-top: 45px;
+			font-size: 25px;
+			background: url(../images/Matt-120x120.jpg);
+		}
+	}//student
 }
+
