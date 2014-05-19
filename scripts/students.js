@@ -36,7 +36,7 @@ var students = [
 		'id':5,
 		'name':'Nerissa',
 		'fact':'Is a writer',
-		'bigImg':'images/Nerissa-260x260.jpg',
+		'bigImg':'images/Nerissa-260x260.jpeg',
 		'match': '1'  
 
 	},

@@ -7,19 +7,55 @@ $(function () {
 	var firstId; //first person selected
 	var secondId; //second person selected
 
+	var matchedIds = [];//matched Ids.
+
 	function init() {
 		count = 0;
 		$('.selected').css('opacity','0');
 	}//init
 
+	//tests if 
 	function testMatch() {
-		if (students[firstId-1].match === students[secondId-1].match){
-			console.log("Its a Match!!!")
+		var firstStudent = students[firstId -1];
+		var secondStudent = students[secondId - 1];
+
+		if (firstStudent.match === secondStudent.match){
+			
+			$('.student.id'+firstId).css('background','green');
+			$('.student.id'+secondId).css('background','green');
+			matchedIds.push(firstId);
+			matchedIds.push(secondId);
+
+			$('.selected h2').fadeOut(900);
+			$('.selected img').fadeOut(900);
+			$('.selected p').fadeOut(900);
+
+			
+
 		}
 		else {
+			$('.student.id'+firstId).css('border','none');
+			$('.student.id'+secondId).css('border','none');
+
+			
+			$('.selected.left h2').fadeOut(900);
+			$('.selected.left img').fadeOut(900);
+			$('.selected.left p').fadeOut(900);
+			$('.selected.right h2').fadeOut(900);
+			$('.selected.right img').fadeOut(900);
+			$('.selected.right p').fadeOut(900);
+
+
 			
 		}
 	}//test match
+
+	Array.prototype.contains = function ( needle ) {
+	   for (i in this) {
+	       if (this[i] == needle) return true;
+	   }
+	   return false;
+	}
 
 
 
@@ -34,14 +70,22 @@ $(function () {
 		//get the student object from students array (index + 1 because of 0 indexing)
 		var studentObj = students[index -1];
 		
+		//test if person you are clicking on is already matched.
+		if(matchedIds.contains(index)){
+			console.log('pick someone else!');
+		}
 		//first click
-		if(count === 0){
+		else if(count === 0){
 			firstId = index;
 			$('.selected.left').css('opacity','1');
 			$(this).css('border','2px solid red');
 			$('.selected.left h2').text(studentObj.name);
 			$('.selected.left img').attr('src',studentObj.bigImg);
 			$('.selected.left p').text(studentObj.fact);
+
+			$('.selected.left h2').fadeIn();
+			$('.selected.left img').fadeIn();
+			$('.selected.left p').fadeIn();
 			count++;
 		}
 		//2nd click
@@ -57,6 +101,10 @@ $(function () {
 			$('.selected.right h2').text(studentObj.name);
 			$('.selected.right img').attr('src',studentObj.bigImg);
 			$('.selected.right p').text(studentObj.fact);
+
+			$('.selected.right h2').fadeIn(5);
+			$('.selected.right img').fadeIn(5);
+			$('.selected.right p').fadeIn(5);
 			count= 0;
 			testMatch();
 		}
