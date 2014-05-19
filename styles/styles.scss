@@ -20,17 +20,23 @@
      clear: both;
 }
 
+.wrapper{
+	width: 1120px;
+	margin: 0 auto;
+}
+
 h1 {
 	font-size: 80px;
 	text-align: center;
 }
 
 .selected {
-	padding: 75px 0 ;
+	padding: 75px 10px ;
 	float: left;
 	width: 200px;
 	height: 480px;
 	border: 1px solid black;
+
 
 	h2 {
 		font-size: 30px;
@@ -38,8 +44,9 @@ h1 {
 	}
 
 	img {
-		width: 240px;
-		height: 240px;
+		width: 180px;
+		height: 180px;
+		border-radius: 50%;
 	}
 
 	p {
