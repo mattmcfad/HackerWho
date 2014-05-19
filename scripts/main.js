@@ -14,11 +14,12 @@ $(function () {
 		$('.selected').css('opacity','0');
 	}//init
 
-	//tests if 
+	//tests if two selections are a Match.
 	function testMatch() {
 		var firstStudent = students[firstId -1];
 		var secondStudent = students[secondId - 1];
 
+		//if they match.
 		if (firstStudent.match === secondStudent.match){
 			
 			$('.student.id'+firstId).css('background','green');
@@ -29,35 +30,27 @@ $(function () {
 			$('.selected h2').fadeOut(900);
 			$('.selected img').fadeOut(900);
 			$('.selected p').fadeOut(900);
-
-			
-
 		}
 		else {
 			$('.student.id'+firstId).css('border','none');
 			$('.student.id'+secondId).css('border','none');
 
-			
 			$('.selected.left h2').fadeOut(900);
 			$('.selected.left img').fadeOut(900);
 			$('.selected.left p').fadeOut(900);
 			$('.selected.right h2').fadeOut(900);
 			$('.selected.right img').fadeOut(900);
-			$('.selected.right p').fadeOut(900);
-
-
-			
+			$('.selected.right p').fadeOut(900);			
 		}
 	}//test match
 
+	//Does array contain value.
 	Array.prototype.contains = function ( needle ) {
 	   for (i in this) {
 	       if (this[i] == needle) return true;
 	   }
 	   return false;
 	}
-
-
 
 	//Clicking a student in the directory
 	$('.student').on('click', function(){
