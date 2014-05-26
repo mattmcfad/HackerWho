@@ -99,7 +99,7 @@ var students = [
 	{
 		'id':13,
 		'name':'Jonny',
-		'fact':'Jesus , Elder, Musician, GILF HUNTER',
+		'fact':'Jesus , Elder, Musician',
 		'bigImg':'images/Jonny-260x260.jpg',  
 		'match': '12'
 
