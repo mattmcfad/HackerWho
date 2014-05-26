@@ -35,12 +35,12 @@ $(function () {
 			$('.student.id'+firstId).css('border','none');
 			$('.student.id'+secondId).css('border','none');
 
-			$('.selected.left h2').fadeOut(900);
-			$('.selected.left img').fadeOut(900);
-			$('.selected.left p').fadeOut(900);
-			$('.selected.right h2').fadeOut(900);
-			$('.selected.right img').fadeOut(900);
-			$('.selected.right p').fadeOut(900);			
+			$('.selected.left h2').fadeOut(3000);
+			$('.selected.left img').fadeOut(3000);
+			$('.selected.left p').fadeOut(3000);
+			$('.selected.right h2').fadeOut(3000);
+			$('.selected.right img').fadeOut(3000);
+			$('.selected.right p').fadeOut(3000);			
 		}
 	}//test match
 
@@ -72,9 +72,9 @@ $(function () {
 			firstId = index;
 			$('.selected.left').css('opacity','1');
 			$(this).css('border','2px solid red');
-			$('.selected.left h2').text(studentObj.name);
+			$('.selected.left h2').html(studentObj.name);
 			$('.selected.left img').attr('src',studentObj.bigImg);
-			$('.selected.left p').text(studentObj.fact);
+			$('.selected.left p').html(studentObj.fact);
 
 			$('.selected.left h2').fadeIn();
 			$('.selected.left img').fadeIn();
@@ -91,9 +91,9 @@ $(function () {
 			secondId = index;
 			$('.selected.right').css('opacity','1');
 			$(this).css('border','2px solid red');
-			$('.selected.right h2').text(studentObj.name);
+			$('.selected.right h2').html(studentObj.name);
 			$('.selected.right img').attr('src',studentObj.bigImg);
-			$('.selected.right p').text(studentObj.fact);
+			$('.selected.right p').html(studentObj.fact);
 
 			$('.selected.right h2').fadeIn(5);
 			$('.selected.right img').fadeIn(5);

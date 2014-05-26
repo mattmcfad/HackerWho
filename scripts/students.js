@@ -2,7 +2,7 @@ var students = [
 	{
 		'id':1,
 		'name':'Jen',
-		'fact':"Her worst job was working in retail <span class='clarificaion'>(Le Chateau)</span>.",
+		'fact':'Her worst job was working in retail <span class="clarification">(Le Chateau)</span>.',
 		'bigImg':'images/Jenn-260x260.jpg',
 		'match':'1',
 
@@ -18,7 +18,7 @@ var students = [
 	},
 	{
 		'id':3,
-		'name':'Ray'
+		'name':'Ray',
 		'fact':'The weirdest food he has eaten is grasshoppers!',
 		'bigImg':'images/Ray-260x260.jpg',
 		'match': '6' 
@@ -43,7 +43,7 @@ var students = [
 	{
 		'id':6,
 		'name':'Rasin',
-		'fact':'His childhood idol was a superhero. <span class='clarificaiton'>(Superman!)</span>',
+		'fact':"His childhood idol was a superhero. <span class='clarificaiton'>(Superman!)</span>",
 		'bigImg':'images/Rasin-260x260.jpg',
 		'match': '5'  
 
@@ -51,7 +51,7 @@ var students = [
 	{
 		'id':7,
 		'name':'Logan',
-		'fact':'His childhood idol was a musician. <span class = 'clarification'> Specifically, the man in black, Johnny Cash.</span>',
+		'fact':'His childhood idol was a musician. <span class = "clarification"> Specifically, the man in black, Johnny Cash.</span>',
 		'bigImg':'images/Logan-260x260.jpg', 
 		'match': '8' 
 
@@ -59,7 +59,7 @@ var students = [
 	{
 		'id':8,
 		'name':'Anna',
-		'fact':'She was born in Europe. <span class='clarification'> Specifically, Witzenhausen, Germany.</span>',
+		'fact':'She was born in Europe. <span class="clarification"> Specifically, Witzenhausen, Germany.</span>',
 		'bigImg':'images/Anna-260x260.jpg',
 		'match': '4'  
 
@@ -123,7 +123,7 @@ var students = [
 	{
 		'id':16,
 		'name':'Meahgan',
-		'fact':'Her childhood idol was a superhero. <span class='clarificaiton'>(She-Ra!)</span>',
+		'fact':'Her childhood idol was a superhero. <span class="clarificaiton">(She-Ra!)</span>',
 		'bigImg':'images/Meahgan-260x260.jpg', 
 		'match': '5' 
 
@@ -178,7 +178,7 @@ var students = [
 	{
 		'id':23,
 		'name':'Krisztina',
-		'fact': 'She was born in Europe. <span class='clarification'> Specifically, Transylvania.</span>',
+		'fact': 'She was born in Europe. <span class="clarification"> Specifically, Transylvania.</span>',
 		'bigImg':'images/Krisztina-260x260.jpg',
 		'match':'4',  
 
@@ -186,7 +186,7 @@ var students = [
 	{
 		'id':24,
 		'name':'Elyse',
-		'fact':'The weirdest food she has eaten is grasshoppers!'
+		'fact':'The weirdest food she has eaten is grasshoppers!',
 		'bigImg':'images/Elyse-260x260.jpg',
 		'match':'6'  
 
