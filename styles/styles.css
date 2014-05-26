@@ -50,6 +50,7 @@ h1 {
 }
 
 .photogrid {
+  margin: 0 auto;
   width: 720px;
   float: left;
 }

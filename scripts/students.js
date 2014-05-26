@@ -99,6 +99,7 @@ var students = [
 	{
 		'id':13,
 		'name':'Jonny',
+		'fact':'Jesus , Elder, Musician',
 		'fact':"His childhood idol was a musician. <span class = 'clarification'> Specifically, Weezer's pal Buddy Holly.</span>",
 		'bigImg':'images/Jonny-260x260.jpg',  
 		'match': '8'
