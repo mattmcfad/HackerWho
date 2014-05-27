@@ -1,130 +1,135 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\000039}}
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000315}}
 .clearfix:after {
   content: " ";
   visibility: hidden;
   display: block;
   height: 0;
-  clear: both; }
+  clear: both;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000323}}
 .wrapper {
   width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000328}}
 h1 {
   font-size: 80px;
-  text-align: center; }
+  text-align: center;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000333}}
 .selected {
   padding: 75px 10px;
   float: left;
   width: 200px;
-  height: 480px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000341}}
-  .selected h2 {
-    font-size: 30px;
-    text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000346}}
-  .selected img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000352}}
-  .selected p {
-    padding: 15px 10px; }
+  height: 480px;
+}
+.selected h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.selected img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.selected p {
+  padding: 15px 10px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000359}}
 .photogrid {
   margin: 0 auto;
   width: 720px;
-  float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000364}}
-  .photogrid .student {
-    height: 120px;
-    width: 120px;
-    float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000368}}
-    .photogrid .student.id1 {
-      background: url(../images/Jenn-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000371}}
-    .photogrid .student.id2 {
-      background: url(../images/Emily-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000374}}
-    .photogrid .student.id3 {
-      background: url(../images/Ray-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000377}}
-    .photogrid .student.id4 {
-      background: url(../images/Vanessa-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000380}}
-    .photogrid .student.id5 {
-      background: url(../images/Nerissa-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000383}}
-    .photogrid .student.id6 {
-      background: url(../images/Rasin-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000386}}
-    .photogrid .student.id7 {
-      background: url(../images/Logan-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000389}}
-    .photogrid .student.id8 {
-      background: url(../images/Anna-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000392}}
-    .photogrid .student.id9 {
-      background: url(../images/Daniel-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000395}}
-    .photogrid .student.id10 {
-      background: url(../images/Corbin-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\0000398}}
-    .photogrid .student.id11 {
-      background: url(../images/Jessie-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003101}}
-    .photogrid .student.id12 {
-      background: url(../images/Robin-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003104}}
-    .photogrid .student.id13 {
-      background: url(../images/Jonny-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003107}}
-    .photogrid .student.id14 {
-      background: url(../images/Lili-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003110}}
-    .photogrid .student.id15 {
-      background: url(../images/Marg-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003113}}
-    .photogrid .student.id16 {
-      background: url(../images/Meahgan-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003116}}
-    .photogrid .student.id17 {
-      background: url(../images/Zoe-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003119}}
-    .photogrid .student.id18 {
-      background: url(../images/Wisam-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003122}}
-    .photogrid .student.id19 {
-      background: url(../images/Simon-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003125}}
-    .photogrid .student.id20 {
-      background: url(../images/Sarah-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003128}}
-    .photogrid .student.id21 {
-      background: url(../images/Victoria-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003131}}
-    .photogrid .student.id22 {
-      background: url(../images/Matt-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003134}}
-    .photogrid .student.id23 {
-      background: url(../images/Krisztina-120x120.jpg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003137}}
-    .photogrid .student.id24 {
-      text-align: center;
-      padding-top: 45px;
-      font-size: 25px;
-      background: url(../images/Matt-120x120.jpg); }
+  float: left;
+}
+.photogrid .student {
+  height: 120px;
+  width: 120px;
+  float: left;
+}
+.photogrid .student.id1 {
+  background: url(../images/Jenn-120x120.jpg);
+}
+.photogrid .student.id2 {
+  background: url(../images/Emily-120x120.jpg);
+}
+.photogrid .student.id3 {
+  background: url(../images/Ray-120x120.jpg);
+}
+.photogrid .student.id4 {
+  background: url(../images/Vanessa-120x120.jpg);
+}
+.photogrid .student.id5 {
+  background: url(../images/Nerissa-120x120.jpg);
+}
+.photogrid .student.id6 {
+  background: url(../images/Rasin-120x120.jpg);
+}
+.photogrid .student.id7 {
+  background: url(../images/Logan-120x120.jpg);
+}
+.photogrid .student.id8 {
+  background: url(../images/Anna-120x120.jpg);
+}
+.photogrid .student.id9 {
+  background: url(../images/Daniel-120x120.jpg);
+}
+.photogrid .student.id10 {
+  background: url(../images/Corbin-120x120.jpg);
+}
+.photogrid .student.id11 {
+  background: url(../images/Jessie-120x120.jpg);
+}
+.photogrid .student.id12 {
+  background: url(../images/Robin-120x120.jpg);
+}
+.photogrid .student.id13 {
+  background: url(../images/Jonny-120x120.jpg);
+}
+.photogrid .student.id14 {
+  background: url(../images/Lili-120x120.jpg);
+}
+.photogrid .student.id15 {
+  background: url(../images/Marg-120x120.jpg);
+}
+.photogrid .student.id16 {
+  background: url(../images/Meahgan-120x120.jpg);
+}
+.photogrid .student.id17 {
+  background: url(../images/Zoe-120x120.jpg);
+}
+.photogrid .student.id18 {
+  background: url(../images/Wisam-120x120.jpg);
+}
+.photogrid .student.id19 {
+  background: url(../images/Simon-120x120.jpg);
+}
+.photogrid .student.id20 {
+  background: url(../images/Sarah-120x120.jpg);
+}
+.photogrid .student.id21 {
+  background: url(../images/Victoria-120x120.jpg);
+}
+.photogrid .student.id22 {
+  background: url(../images/Matt-120x120.jpg);
+}
+.photogrid .student.id23 {
+  background: url(../images/Krisztina-120x120.jpg);
+}
+.photogrid .student.id24 {
+  text-align: center;
+  padding-top: 45px;
+  font-size: 25px;
+  background: url(../images/Matt-120x120.jpg);
+}
+
+.clock p {
+  font-size: 68px;
+  text-align: center;
+}
