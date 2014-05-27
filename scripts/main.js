@@ -35,12 +35,12 @@ $(function () {
 			$('.student.id'+firstId).css('border','none');
 			$('.student.id'+secondId).css('border','none');
 
-			$('.selected.left h2').fadeOut(3000);
-			$('.selected.left img').fadeOut(3000);
-			$('.selected.left p').fadeOut(3000);
-			$('.selected.right h2').fadeOut(3000);
-			$('.selected.right img').fadeOut(3000);
-			$('.selected.right p').fadeOut(3000);			
+			$('.selected.left h2').delay(1200).fadeOut(500);
+			$('.selected.left img').delay(1200).fadeOut(500);
+			$('.selected.left p').delay(1200).fadeOut(500);
+			$('.selected.right h2').delay(1200).fadeOut(500);
+			$('.selected.right img').delay(1200).fadeOut(500);
+			$('.selected.right p').delay(1200).fadeOut(500);			
 		}
 	}//test match
 
