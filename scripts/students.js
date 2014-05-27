@@ -83,7 +83,7 @@ var students = [
 	{
 		'id':11,
 		'name':'Jessie',
-		'fact':"Her go-to kareoke song is 90's top-10 pop. <span class='clarification'>Which song? Show Me the Meaning of Being Lonely by The Backstreet Boys.</span>",
+		'fact':"Her go-to kareoke song is a 90's Top Ten hit. <span class='clarification'>Which song? Show Me the Meaning of Being Lonely by The Backstreet Boys.</span>",
 		'bigImg':'images/Jessie-260x260.jpg',
 		'match': '12'  
 
@@ -108,7 +108,7 @@ var students = [
 	{
 		'id':14,
 		'name':'Lili',
-		'fact':"Her go-to kareoke song is 90's top-10 pop. <span class='clarification'>Which song? My Heart Will Go On by Celine Dion.</span>",
+		'fact':"Her go-to kareoke song is a 90's Top Ten hit. <span class='clarification'>Which song? My Heart Will Go On by Celine Dion.</span>",
 		'bigImg':'images/Lili-260x260.jpg',
 		'match': '12'  
 
