@@ -8,7 +8,7 @@ $(function () {
 	var secondId; //second person selected
 
 	var matchedIds = [];//matched Ids.
-
+	
 	function init() {
 		count = 0;
 		$('.selected').css('opacity','0');
@@ -24,23 +24,32 @@ $(function () {
 			
 			$('.student.id'+firstId).css('background','green');
 			$('.student.id'+secondId).css('background','green');
+			
+			//add both the Id's to the matched array
 			matchedIds.push(firstId);
 			matchedIds.push(secondId);
 
-			$('.selected h2').fadeOut(900);
-			$('.selected img').fadeOut(900);
-			$('.selected p').fadeOut(900);
+			//
+			var selected = $('.selected');
+			selected.find('h2').delay(1200).fadeOut(900);
+			selected.find('img').delay(1200).fadeOut(900);
+			selected.find('p').delay(1200).fadeOut(900);
 		}
 		else {
 			$('.student.id'+firstId).css('border','none');
 			$('.student.id'+secondId).css('border','none');
 
-			$('.selected.left h2').delay(1200).fadeOut(500);
-			$('.selected.left img').delay(1200).fadeOut(500);
-			$('.selected.left p').delay(1200).fadeOut(500);
-			$('.selected.right h2').delay(1200).fadeOut(500);
-			$('.selected.right img').delay(1200).fadeOut(500);
-			$('.selected.right p').delay(1200).fadeOut(500);			
+			//Delay then fadeOut left
+			var selectedLeft = $('.selected.left');
+			selectedLeft.find('h2').delay(1200).fadeOut(500);
+			selectedLeft.find('img').delay(1200).fadeOut(500);
+			selectedLeft.find('p').delay(1200).fadeOut(500);
+			
+			//Delay then fadeOut right
+			var selectedRight = $('.selected.right');
+			selectedRight.find('h2').delay(1200).fadeOut(500);
+			selectedRight.find('img').delay(1200).fadeOut(500);
+			selectedRight.find('p').delay(1200).fadeOut(500);			
 		}
 	}//test match
 
@@ -70,15 +79,21 @@ $(function () {
 		//first click
 		else if(count === 0){
 			firstId = index;
+			
 			$('.selected.left').css('opacity','1');
 			$(this).css('border','2px solid red');
-			$('.selected.left h2').html(studentObj.name);
-			$('.selected.left img').attr('src',studentObj.bigImg);
-			$('.selected.left p').html(studentObj.fact);
 
-			$('.selected.left h2').fadeIn();
-			$('.selected.left img').fadeIn();
-			$('.selected.left p').fadeIn();
+			//fadeIn left
+			var selectedLeft = $('.selected.left');
+			selectedLeft.find('h2').html(studentObj.name);
+			selectedLeft.find('img').attr('src',studentObj.bigImg);
+			selectedLeft.find('p').html(studentObj.fact);
+
+			//fadeIn right
+			var selectedRight = $('.selected.right');
+			selectedRight.find('h2').fadeIn();
+			selectedRight.find('img').fadeIn();
+			selectedRight.find('p').fadeIn();
 			count++;
 		}
 		//2nd click
