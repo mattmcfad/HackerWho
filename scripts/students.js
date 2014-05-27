@@ -11,7 +11,7 @@ var students = [
 	{
 		'id':2,
 		'name':'Emily',
-		'fact':'She used to be a librarian.',
+		'fact':"She used to be a tattooed librarian. <span class='clarification'>She's still tattooed.</span>",
 		'bigImg':'images/Emily-260x260.jpg',
 		'match':'7',  
 
@@ -19,7 +19,7 @@ var students = [
 	{
 		'id':3,
 		'name':'Ray',
-		'fact':'The weirdest food he has eaten is grasshoppers!',
+		'fact':'The weirdest food he has eaten is grasshoppers.',
 		'bigImg':'images/Ray-260x260.jpg',
 		'match': '6' 
 
@@ -27,7 +27,7 @@ var students = [
 	{
 		'id':4,
 		'name':'Vanessa',
-		'fact':'She used to be a librarian.',
+		'fact':"She used to be a tattooed librarian. <span class='clarification'>She's still tattooed.</span>",
 		'bigImg':'images/Vanessa-260x260.jpg',
 		'match': '7'  
 
@@ -75,7 +75,7 @@ var students = [
 	{
 		'id':10,
 		'name':'Corbin',
-		'fact':"He is inspired by Tim Ferris.",
+		'fact':"He finds Tim Ferris inspiring.",
 		'bigImg':'images/Corbin-260x260.jpg', 
 		'match': '2' 
 
@@ -171,7 +171,7 @@ var students = [
 	{
 		'id':22,
 		'name':'Matt',
-		'fact':"He is inspired by Tim Ferris.",
+		'fact':"He finds Tim Ferris inspiring.",
 		'bigImg':'images/Matt-260x260.jpg',
 		'match': '9'  
 

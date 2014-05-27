@@ -27,9 +27,9 @@ $(function () {
 			matchedIds.push(firstId);
 			matchedIds.push(secondId);
 
-			$('.selected h2').fadeOut(900);
-			$('.selected img').fadeOut(900);
-			$('.selected p').fadeOut(900);
+			$('.selected h2').delay(1200).fadeOut(900);
+			$('.selected img').delay(1200).fadeOut(900);
+			$('.selected p').delay(1200).fadeOut(900);
 		}
 		else {
 			$('.student.id'+firstId).css('border','none');
