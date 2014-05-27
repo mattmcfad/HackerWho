@@ -77,7 +77,7 @@ var students = [
 		'name':'Corbin',
 		'fact':"He is inspired by Tim Ferris.",
 		'bigImg':'images/Corbin-260x260.jpg', 
-		'match': '9' 
+		'match': '2' 
 
 	},
 	{
@@ -118,7 +118,7 @@ var students = [
 		'name':'Margaret',
 		'fact':"The weirdest food she has eaten is frogs' legs.",
 		'bigImg':'images/Marg-260x260.jpg', 
-		'match': '11' 
+		'match': '3' 
 
 	},
 	{
@@ -150,7 +150,7 @@ var students = [
 		'name':'Simon',
 		'fact':"His worst job was working in retail <span class='clarification'> (he won't say where)</span>.",
 		'bigImg':'images/Simon-260x260.jpg',
-		'match': '6'  
+		'match': '1'  
 
 	},
 	{
