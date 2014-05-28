@@ -77,7 +77,7 @@ var students = [
 		'name':'Corbin',
 		'fact':"He finds Tim Ferris inspiring.",
 		'bigImg':'images/Corbin-260x260.jpg', 
-		'match': '2' 
+		'match': '9' 
 
 	},
 	{

@@ -26,7 +26,7 @@
 }
 
 body{
-font-family: 'Dosis', sans-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 h1 {
@@ -147,9 +147,10 @@ h1 {
 	}//student
 }
   
-  .clock {
-  	p {
-  	font-size:68px;
-  	text-align:center;
-    }
-  }
+.clock {
+	width: 100%;
+	p {
+		font-size: 68px;
+		text-align: center;
+	}
+}

@@ -1,7 +1,5 @@
 var app = {
 
-	count: '',
-	firstId: '',
 	matchedIds: [],
 
 
@@ -23,7 +21,6 @@ var app = {
 	//@param id - correlates to which student in students.js
 	click: function(id) {
 		
-
 		//cut up "students idXX" to just "XX"
 		var index = Number(id.substring(id.indexOf('id')+2));
 		console.log("clicked! " + app.count + " index: " + index);
@@ -60,46 +57,51 @@ var app = {
 			console.log('errrror: no!');
 		}
 
-				//2nd click
+		//2nd click
 		else if (app.count ===1){
 
 			console.log("2nd click: " + studentObj.name);
 
 			app.secondId = index;
+			console.log("Second ID!!! : " + app.secondId);
 			console.log("student2 id: " + index);
 			$('.student.id'+index).css('border','2px solid red');
 
 			var selectedRight = $('.selected.right');
 			selectedRight.css('opacity','1');
 
+			//set the h2, img and p to the appropriate student's info
 			selectedRight.find('h2').html(studentObj.name);
 			selectedRight.find('img').attr('src',studentObj.bigImg);
 			selectedRight.find('p').html(studentObj.fact);
 
-			
+			//Make the right selected VISIBLE!!!
 			selectedRight.find('h2').fadeIn(5);
 			selectedRight.find('img').fadeIn(5);
 			selectedRight.find('p').fadeIn(5);
 			
-			app.count= 0;
+			//reset to first click 
+			app.count = 0;
+			//check if they Math
 			app.testMatch();
 		}
 	},
 
 	testMatch: function() {
-		console.log("testing match:");
+
+		//get 1st and 2nd student JSON object
 		var firstStudent = students[app.firstId -1];
 		var secondStudent = students[app.secondId - 1];
 
-
 		//if they match.
 		if (firstStudent.match === secondStudent.match){
-			console.log("they matched!")
+			
 			//indicate they have been selected
 			$('.student.id'+app.firstId).css('background','green');
 			$('.student.id'+app.secondId).css('background','green');
 			
-			//add both the Id's to the matched array
+			//add both the id's to the matched array
+			//this signifies they have already been matched
 			app.matchedIds.push(app.firstId);
 			app.matchedIds.push(app.secondId);
 
@@ -112,30 +114,20 @@ var app = {
 		//else deselect both
 		else {
 
-			console.log("they didn't match");
 			//remove the selected border
 			$('.student.id'+app.firstId).css('border','none');
 			$('.student.id'+app.secondId).css('border','none');
 
-
+			//fade out both.
 			var selected = $('.selected');
 			selected.find('h2').delay(1200).fadeOut(900);
 			selected.find('img').delay(1200).fadeOut(900);
 			selected.find('p').delay(1200).fadeOut(900);
-
-			// //Delay then fadeOut left
-			// var selectedLeft = $('.selected.left');
-			// selectedLeft.find('h2').delay(1200).fadeOut(500);
-			// selectedLeft.find('img').delay(1200).fadeOut(500);
-			// selectedLeft.find('p').delay(1200).fadeOut(500);
-			
-			// //Delay then fadeOut right
-			// var selectedRight = $('.selected.right');
-			// selectedRight.find('h2').delay(1200).fadeOut(500);
-			// selectedRight.find('img').delay(1200).fadeOut(500);
-			// selectedRight.find('p').delay(1200).fadeOut(500);			
+		
 		}
 	},//test Match
+
+
 }//app
 
 //Does array contain value.
@@ -146,14 +138,11 @@ Array.prototype.contains = function ( needle ) {
    return false;
 }
 
-
-
-
 $(function () {
 
 	//initialize the project
 	app.init();
 
-});//body function
+});//document ready
 
 
