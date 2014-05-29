@@ -1,23 +1,33 @@
 var seconds = 0;
 var minutes = 0;
 
+var startedTimer = false;
+
 
 
 $(".student").click(function(){
 
-    var countdown = window.setInterval(function() { 
-    $(".clock p").text(seconds, minutes);
-    ++seconds;
+    if (!startedTimer) {
+        console.log("starting timer");
+        startedTimer = true;
+        var countdown = window.setInterval(function() { 
+        $(".clock p").text(seconds, minutes);
+        ++seconds;
 
-        if (seconds == 60)
-            {seconds = 0;
-            minutes = minutes + 1; 
-        }
+            if (seconds == 60)
+                {seconds = 0;
+                minutes = minutes + 1; 
+            }
 
-        else { 
-            minutes = minutes; 
-        }
-    });
+            else { 
+                minutes = minutes; 
+            }
+        });
+    }
+    else {
+        console.log("you already started!");
+    }
+
 
 });
 
