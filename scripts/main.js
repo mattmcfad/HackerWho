@@ -1,56 +1,47 @@
 var app = {
 
 	matchedIds: [],
+	matchedPairs: 0,
 
 
 	init: function() {
 		app.count = 0;
+		app.matchedPairs = 0;
 		//hide selected sides.
 		$('.selected').css('opacity','0');
 
+		app.enableHandlers();
+
+	},
+
+	enableHandlers: function() {
 		//Clicking a student in the directory
 		$('.student').on('click', function(){
 			//class name which is "students idXX"
 			var id = $(this).attr('class');
 			app.click(id);
 		});
-
 	},
 
 	//Handle clicking on a student in the grid
 	//@param id - correlates to which student in students.js
 	click: function(id) {
+
+		console.log("app count:" + app.count);
+
 		
 		//cut up "students idXX" to just "XX"
 		var index = Number(id.substring(id.indexOf('id')+2));
-		console.log("clicked! " + app.count + " index: " + index);
+		//console.log("clicked! " + app.count + " index: " + index);
 		//get the student object from students array (index + 1 because of 0 indexing)
 		var studentObj = students[index -1];
 		
+		console.log("clicked: " + studentObj.name);
+
 		//test if person you are clicking on is already matched.
 		if(app.matchedIds.contains(index)){
 			console.log('pick someone else!');
 		}
-
-		//first click
-		else if(app.count === 0){
-			app.firstId = index;
-			console.log("first click: " + studentObj.name);
-			$('.selected.left').css('opacity','1');
-			$('.student.id'+index).css('border','2px solid red');
-
-			//fadeIn left
-			var selectedLeft = $('.selected.left');
-			selectedLeft.find('h2').html(studentObj.name);
-			selectedLeft.find('img').attr('src',studentObj.bigImg);
-			selectedLeft.find('p').html(studentObj.fact);
-
-			selectedLeft.find('h2').fadeIn();
-			selectedLeft.find('img').fadeIn();
-			selectedLeft.find('p').fadeIn();
-			app.count++;
-		}
-
 
 		//dont want to select the same person.
 		else if (app.firstId === index){
@@ -58,33 +49,63 @@ var app = {
 		}
 
 		//2nd click
-		else if (app.count ===1){
+		else if (app.count === 1){
 
 			console.log("2nd click: " + studentObj.name);
 
 			app.secondId = index;
-			console.log("Second ID!!! : " + app.secondId);
-			console.log("student2 id: " + index);
+			//console.log("Second ID!!! : " + app.secondId);
+			//console.log("student2 id: " + index);
 			$('.student.id'+index).css('border','2px solid red');
 
 			var selectedRight = $('.selected.right');
-			selectedRight.css('opacity','1');
+			
 
 			//set the h2, img and p to the appropriate student's info
 			selectedRight.find('h2').html(studentObj.name);
 			selectedRight.find('img').attr('src',studentObj.bigImg);
 			selectedRight.find('p').html(studentObj.fact);
 
+			selectedRight.css('opacity','1');
+
 			//Make the right selected VISIBLE!!!
-			selectedRight.find('h2').fadeIn(5);
-			selectedRight.find('img').fadeIn(5);
-			selectedRight.find('p').fadeIn(5);
+			
+			// selectedRight.find('h2').fadeIn(5);
+			// selectedRight.find('img').fadeIn(5);
+			// selectedRight.find('p').fadeIn(5);
 			
 			//reset to first click 
 			app.count = 0;
 			//check if they Math
 			app.testMatch();
 		}
+
+		//first click
+		else if(app.count === 0){
+			app.firstId = index;
+			
+			//console.log("first click: " + studentObj.name);
+			
+			$('.student.id'+index).css('border','2px solid red');
+
+			//fadeIn left
+			var selectedLeft = $('.selected.left');
+			selectedLeft.find('h2').html(studentObj.name);
+			selectedLeft.find('img').attr('src',studentObj.bigImg);
+			selectedLeft.find('p').html(studentObj.fact);
+			
+			$('.selected.left').css('opacity','1');
+
+			// selectedLeft.find('h2').fadeIn();
+			// selectedLeft.find('img').fadeIn();
+			// selectedLeft.find('p').fadeIn();
+
+			app.count++;
+		}
+
+
+
+
 	},
 
 	testMatch: function() {
@@ -93,8 +114,14 @@ var app = {
 		var firstStudent = students[app.firstId -1];
 		var secondStudent = students[app.secondId - 1];
 
+		//remove event handlers
+		$('.student').off();
+		
+		
+
 		//if they match.
 		if (firstStudent.match === secondStudent.match){
+			app.MatchedPairs++;
 			
 			//indicate they have been selected
 			$('.student.id'+app.firstId).css('background','green');
@@ -106,10 +133,11 @@ var app = {
 			app.matchedIds.push(app.secondId);
 
 			//cache selected, delay and fade out
-			var selected = $('.selected');
-			selected.find('h2').delay(1200).fadeOut(900);
-			selected.find('img').delay(1200).fadeOut(900);
-			selected.find('p').delay(1200).fadeOut(900);
+		
+			// var selected = $('.selected');
+			// selected.find('h2').delay(1200).fadeOut(900);
+			// selected.find('img').delay(1200).fadeOut(900);
+			// selected.find('p').delay(1200).fadeOut(900);
 		}
 		//else deselect both
 		else {
@@ -119,12 +147,43 @@ var app = {
 			$('.student.id'+app.secondId).css('border','none');
 
 			//fade out both.
-			var selected = $('.selected');
-			selected.find('h2').delay(1200).fadeOut(900);
-			selected.find('img').delay(1200).fadeOut(900);
-			selected.find('p').delay(1200).fadeOut(900);
+			// var selected = $('.selected');
+			// selected.find('h2').delay(1200).fadeOut(900);
+			// selected.find('img').delay(1200).fadeOut(900);
+			// selected.find('p').delay(1200).fadeOut(900);
 		
 		}
+
+		//delay then re-enable event handlers.
+			// $('.student').delay(10000).on('click', function(){
+			// 	console.log("it werks");
+			// 	//class name which is "students idXX"
+			// 	var id = $(this).attr('class');
+			// 	app.click(id);
+			// });
+
+			
+			
+			
+
+			setTimeout(function(){
+				$('.selected').css('opacity',0);	
+				app.enableHandlers();
+			}, 3000);
+
+
+
+			// $('.selected').animate({
+			// 	opacity: 0,
+			// },
+			// 	3000, function(){
+			// 		app.enableHandlers();
+			// 	}
+			// );
+
+
+
+
 	},//test Match
 
 
