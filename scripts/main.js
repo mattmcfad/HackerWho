@@ -23,6 +23,16 @@ var app = {
 		});
 	},
 
+
+	gameCompletion: function() {
+		console.log("you win");
+		//stop timer
+
+		//display background
+
+		//modal box to post twitter score.
+	},
+
 	//Handle clicking on a student in the grid
 	//@param id - correlates to which student in students.js
 	click: function(id) {
@@ -104,8 +114,6 @@ var app = {
 		}
 
 
-
-
 	},
 
 	testMatch: function() {
@@ -121,11 +129,14 @@ var app = {
 
 		//if they match.
 		if (firstStudent.match === secondStudent.match){
-			app.MatchedPairs++;
+			
+
+			app.matchedPairs++;
 			
 			//indicate they have been selected
-			$('.student.id'+app.firstId).css('background','green');
-			$('.student.id'+app.secondId).css('background','green');
+			$('.student.id'+app.firstId).css('background','green').addClass('matched');
+
+			$('.student.id'+app.secondId).css('background','green').addClass('matched');
 			
 			//add both the id's to the matched array
 			//this signifies they have already been matched
@@ -162,14 +173,11 @@ var app = {
 			// 	app.click(id);
 			// });
 
-			
-			
-			
 
-			setTimeout(function(){
-				$('.selected').css('opacity',0);	
-				app.enableHandlers();
-			}, 3000);
+		setTimeout(function(){
+			$('.selected').css('opacity',0);	
+			app.enableHandlers();
+		}, 1000);
 
 
 
@@ -180,8 +188,11 @@ var app = {
 			// 		app.enableHandlers();
 			// 	}
 			// );
+		console.log("Matched Pairs "+ app.matchedPairs);
 
-
+		if (app.matchedPairs === 12){
+			app.gameCompletion();
+		}
 
 
 	},//test Match
