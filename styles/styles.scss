@@ -3,6 +3,7 @@
 //**************************************************************||
 $black: #2B2A2A;
 $transblack: rgba(43,42,42,0.7);
+$transblack2: rgba(43,42,42,0.4);
 $white: #F7F7F7;
 $transwhite: rgba(247,247,247,0.6);
 $lightgrey: rgba(43,42,42,0.2);
@@ -13,6 +14,14 @@ $lightgrey: rgba(43,42,42,0.2);
 @mixin studentimgs {
 	height: 120px;
 	width: 120px;
+}
+@mixin boxshadows {
+	-webkit-box-shadow: 5px 5px $transblack2;
+	-moz-box-shadow: 5px 5px $transblack2;
+	box-shadow: 5px 5px $transblack2;
+}
+@mixin textshadows {
+	text-shadow: 2px 2px $black;
 }
 //**************************************************************||
 //                         GLOBAL                               ||
@@ -35,22 +44,23 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	width: 1120px;
 	min-height: 100%;
 	margin: 20px auto;
-	background: $transblack;
-	border-radius: 4px;
+	background: $transblack2;
+	border-radius: 20px;
 }	
 
 body{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	// background: $white;
 	color: $white;
 }
 html {
+	background-image: url(../images/old_mathematics.png);
 }
 h1 {
 	font-size: 80px;
 	text-align: center;
 	padding: 30px 0;
-	text-shadow: 2px 2px $black;
+	text-shadow: 5px 5px $black;
 }
 
 //**************************************************************||
@@ -69,18 +79,20 @@ h1 {
 		font-size: 30px;
 		text-align: center;
 		padding: 20px 0;
+		@include textshadows;
 	}
 
 	img {
 		width: 180px;
 		height: 180px;
 		border-radius: 50%;
+		@include boxshadows;
 	}
 
 	p {
 		padding: 15px 10px;
 		font-size: 18px;
-		text-shadow: 1px 1px $black;
+		@include textshadows;
 	}
 }
 
@@ -103,6 +115,7 @@ h1 {
 	margin: 0 auto;
 	width: 720px;
 	float: left;
+	@include boxshadows;
 
 	.student {
 		@include studentimgs;
@@ -192,6 +205,9 @@ h1 {
 	background: $transblack;
 	border: none;
 }
+.selectedoverlay {
+
+}
 
 //**************************************************************||
 //                       CLOCK                                  ||
@@ -201,11 +217,12 @@ h1 {
 	clear: both;
 	.innerclock {
 		width: 130px;
-		margin: 0 auto;
+		margin: 450px;
 		p {
 			font-size: 68px;
 			text-align: left;
 			padding: 20px 0;
+			@include textshadows;
 		}
 	}
 } 

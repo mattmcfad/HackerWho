@@ -172,20 +172,24 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 1120px;
   min-height: 100%;
   margin: 20px auto;
-  background: rgba(43, 42, 42, 0.7);
-  border-radius: 4px;
+  background: rgba(43, 42, 42, 0.4);
+  border-radius: 20px;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Varela Round', sans-serif;
   color: #f7f7f7;
+}
+
+html {
+  background-image: url(../images/old_mathematics.png);
 }
 
 h1 {
   font-size: 80px;
   text-align: center;
   padding: 30px 0;
-  text-shadow: 2px 2px #2b2a2a;
+  text-shadow: 5px 5px #2b2a2a;
 }
 
 .selected {
@@ -199,16 +203,20 @@ h1 {
   font-size: 30px;
   text-align: center;
   padding: 20px 0;
+  text-shadow: 2px 2px #2b2a2a;
 }
 .selected img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  -webkit-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
+  -moz-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
+  box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
 }
 .selected p {
   padding: 15px 10px;
   font-size: 18px;
-  text-shadow: 1px 1px #2b2a2a;
+  text-shadow: 2px 2px #2b2a2a;
 }
 
 .overlay {
@@ -224,6 +232,9 @@ h1 {
   margin: 0 auto;
   width: 720px;
   float: left;
+  -webkit-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
+  -moz-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
+  box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
 }
 .photogrid .student {
   height: 120px;
@@ -317,10 +328,11 @@ h1 {
 }
 .clock .innerclock {
   width: 130px;
-  margin: 0 auto;
+  margin: 450px;
 }
 .clock .innerclock p {
   font-size: 68px;
   text-align: left;
   padding: 20px 0;
+  text-shadow: 2px 2px #2b2a2a;
 }
