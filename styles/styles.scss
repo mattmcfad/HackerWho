@@ -1,17 +1,38 @@
-//VARIABLES
+//**************************************************************||
+//                       VARIABLES                              ||
+//**************************************************************||
+$black: #2B2A2A;
+$transblack: rgba(43,42,42,0.7);
+$transblack2: rgba(43,42,42,0.4);
+$white: #F7F7F7;
+$transwhite: rgba(247,247,247,0.6);
+$lightgrey: rgba(43,42,42,0.2);
 
-//MIXINS
+//**************************************************************||
+//                         MIXINS                               ||
+//**************************************************************||
 @mixin studentimgs {
 	height: 120px;
 	width: 120px;
 }
-
+@mixin boxshadows {
+	-webkit-box-shadow: 5px 5px $lightgrey;
+	-moz-box-shadow: 5px 5px $lightgrey;
+	box-shadow: 5px 5px $lightgrey;
+}
+@mixin textshadows {
+	text-shadow: 2px 2px $lightgrey;
+}
+//**************************************************************||
+//                         GLOBAL                               ||
+//**************************************************************||
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 *, *:before, *:after {
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
     margin: 0;
     padding: 0;
    }
-
 .clearfix:after {
      content: " ";
      visibility: hidden;
@@ -19,51 +40,82 @@
      height: 0;
      clear: both;
 }
-
 .wrapper{
 	width: 1120px;
-	margin: 0 auto;
-}
+	min-height: 100%;
+	margin: 20px auto;
+	// background: $transblack2;
+	border-radius: 20px;
+}	
 
 body{
-	font-family: 'Dosis', sans-serif;
+	font-family: 'Varela Round', sans-serif;
+	// background: $white;
+	color: $black;
 }
-
+html {
+	background-image: url(../images/old_mathematics.png);
+}
 h1 {
 	font-size: 80px;
 	text-align: center;
+	padding: 30px 0;
+	text-shadow: 5px 5px $lightgrey;
 }
 
+//**************************************************************||
+//                       SIDEBARS                               ||
+//**************************************************************||
 .selected {
-	padding: 75px 10px ;
+	padding: 50px 10px ;
 	float: left;
 	width: 200px;
 	height: 480px;
-	// border: 1px solid black;
+	background: $lightgrey;
+	// border: 3px solid black;
 
 
 	h2 {
 		font-size: 30px;
 		text-align: center;
+		padding: 20px 0;
+		@include textshadows;
 	}
 
 	img {
 		width: 180px;
 		height: 180px;
 		border-radius: 50%;
+		@include boxshadows;
 	}
 
 	p {
 		padding: 15px 10px;
+		font-size: 18px;
+		@include textshadows;
 	}
-
-
 }
 
+//**************************************************************||
+//                         PHOTOGRID                            ||
+//**************************************************************||
+.overlay {
+	background: 
+	linear-gradient(
+      rgba(42, 42, 42, 0.75), 
+      rgba(42, 42, 42, 0.75)
+    ),
+    url(../images/classphoto.jpg) no-repeat center center;
+}	
+.nooverlay {
+	background: url(../images/classphoto.jpg) no-repeat center center;
+}
 .photogrid {
+	background-size: cover;
 	margin: 0 auto;
 	width: 720px;
 	float: left;
+	@include boxshadows;
 
 	.student {
 		@include studentimgs;
@@ -146,11 +198,33 @@ h1 {
 		}
 	}//student
 }
-  
+//**************************************************************||
+//                     EVENT RELATED                            ||
+//**************************************************************||  
+.matched {
+	background: $transblack;
+	border: none;
+}
+.selectedoverlay {
+
+}
+
+//**************************************************************||
+//                       CLOCK                                  ||
+//**************************************************************||
 .clock {
 	width: 100%;
-	p {
-		font-size: 68px;
-		text-align: center;
+	clear: both;
+	.innerclock {
+		width: 130px;
+		margin: 450px;
+		p {
+			font-size: 68px;
+			text-align: left;
+			padding: 20px 0;
+			@include textshadows;
+		}
 	}
-}
+} 
+//style .matched
+//cancelled out 

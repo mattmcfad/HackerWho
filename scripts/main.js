@@ -30,8 +30,9 @@ var app = {
 	gameCompletion: function() {
 		//stop timer
 		window.clearInterval(countdown);
-
 		//display background
+		$('div.photogrid').removeClass('overlay').addClass('nooverlay');
+
 
 		//modal box to post twitter score.
 		// to do...
@@ -113,6 +114,7 @@ var app = {
 		var firstStudent = students[app.firstId -1];
 		var secondStudent = students[app.secondId - 1];
 
+
 		//remove event handlers so no other selection can be pressed
 		$('.student').off();	
 
@@ -122,8 +124,9 @@ var app = {
 			app.matchedPairs++;
 			
 			//indicate they have been selected
-			$('.student.id'+app.firstId).css('background','green').addClass('matched');
-			$('.student.id'+app.secondId).css('background','green').addClass('matched');
+			$('.student.id'+app.firstId).css('background','rgba(43,42,42,0.1)').css('border','none');
+			$('.student.id'+app.secondId).css('background','rgba(43,42,42,0.1)').css('border','none');
+
 			
 			//add both the id's to the matched array
 			//this allows us to test if an id has been matched in the click method
@@ -147,6 +150,10 @@ var app = {
 		if (app.matchedPairs === 12){
 			app.gameCompletion();
 		}
+
+		
+		app.firstId = '';
+		app.secondId = '';
 
 	},//test Match
 
