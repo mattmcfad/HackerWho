@@ -52,14 +52,14 @@ body{
 	font-family: 'Varela Round', sans-serif;
 	// background: $white;
 	color: $black;
+	background-image: url(../images/brickwall.png);
+
 }
-html {
-	background-image: url(../images/old_mathematics.png);
-}
+
 h1 {
 	font-size: 80px;
 	text-align: center;
-	padding: 30px 0;
+	padding: 0 0;
 	text-shadow: 5px 5px $lightgrey;
 }
 
@@ -213,15 +213,14 @@ h1 {
 //                       CLOCK                                  ||
 //**************************************************************||
 .clock {
-	width: 100%;
+	width: 30%;
+	margin:0 auto;
 	clear: both;
 	.innerclock {
-		width: 130px;
-		margin: 450px;
 		p {
-			font-size: 68px;
+			font-size: 30px;
 			text-align: left;
-			padding: 20px 0;
+			padding: 0;
 			@include textshadows;
 		}
 	}

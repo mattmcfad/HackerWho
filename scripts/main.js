@@ -23,6 +23,8 @@ var app = {
 			var id = $(this).attr('class');
 			app.click(id);
 		});
+				app.firstId = '';
+		app.secondId = '';
 	},
 
 
@@ -54,7 +56,7 @@ var app = {
 		var studentObj = students[id - 1];
 
 
-		$('.student.id'+id).css('border','2px solid red');
+		$('.student.id'+id).css('border','2px solid white');
 
 		selected.find('h2').html(studentObj.name);
 		selected.find('img').attr('src',studentObj.bigImg);
@@ -124,8 +126,8 @@ var app = {
 			app.matchedPairs++;
 			
 			//indicate they have been selected
-			$('.student.id'+app.firstId).css('background','rgba(43,42,42,0.1)').css('border','none');
-			$('.student.id'+app.secondId).css('background','rgba(43,42,42,0.1)').css('border','none');
+			$('.student.id'+app.firstId).css('background','rgba(43,42,42,0.1)');//.css('border','none');
+			$('.student.id'+app.secondId).css('background','rgba(43,42,42,0.1)');//.css('border','none');
 
 			
 			//add both the id's to the matched array
@@ -136,13 +138,15 @@ var app = {
 		//else deselect both
 		else {
 			//remove the selected border
-			$('.student.id'+app.firstId).css('border','none');
-			$('.student.id'+app.secondId).css('border','none');
+			//$('.student.id'+app.firstId).css('border','none');
+			//$('.student.id'+app.secondId).css('border','none');
 		}
 
 		//delay next selection then re-enable event handlers.
 		setTimeout(function(){
 			$('.selected').css('opacity',0);	
+			$('.student.id'+app.firstId).css('border','none');
+			$('.student.id'+app.secondId).css('border','none');
 			app.enableHandlers();
 		}, 1000);
 
@@ -152,8 +156,7 @@ var app = {
 		}
 
 		
-		app.firstId = '';
-		app.secondId = '';
+
 
 	},//test Match
 
