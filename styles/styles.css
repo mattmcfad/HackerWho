@@ -172,13 +172,12 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   width: 1120px;
   min-height: 100%;
   margin: 20px auto;
-  background: rgba(43, 42, 42, 0.4);
   border-radius: 20px;
 }
 
 body {
   font-family: 'Varela Round', sans-serif;
-  color: #f7f7f7;
+  color: #2b2a2a;
 }
 
 html {
@@ -189,7 +188,7 @@ h1 {
   font-size: 80px;
   text-align: center;
   padding: 30px 0;
-  text-shadow: 5px 5px #2b2a2a;
+  text-shadow: 5px 5px rgba(43, 42, 42, 0.2);
 }
 
 .selected {
@@ -203,20 +202,20 @@ h1 {
   font-size: 30px;
   text-align: center;
   padding: 20px 0;
-  text-shadow: 2px 2px #2b2a2a;
+  text-shadow: 2px 2px rgba(43, 42, 42, 0.2);
 }
 .selected img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  -webkit-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
-  -moz-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
-  box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
+  -webkit-box-shadow: 5px 5px rgba(43, 42, 42, 0.2);
+  -moz-box-shadow: 5px 5px rgba(43, 42, 42, 0.2);
+  box-shadow: 5px 5px rgba(43, 42, 42, 0.2);
 }
 .selected p {
   padding: 15px 10px;
   font-size: 18px;
-  text-shadow: 2px 2px #2b2a2a;
+  text-shadow: 2px 2px rgba(43, 42, 42, 0.2);
 }
 
 .overlay {
@@ -232,9 +231,9 @@ h1 {
   margin: 0 auto;
   width: 720px;
   float: left;
-  -webkit-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
-  -moz-box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
-  box-shadow: 5px 5px rgba(43, 42, 42, 0.4);
+  -webkit-box-shadow: 5px 5px rgba(43, 42, 42, 0.2);
+  -moz-box-shadow: 5px 5px rgba(43, 42, 42, 0.2);
+  box-shadow: 5px 5px rgba(43, 42, 42, 0.2);
 }
 .photogrid .student {
   height: 120px;
@@ -334,5 +333,5 @@ h1 {
   font-size: 68px;
   text-align: left;
   padding: 20px 0;
-  text-shadow: 2px 2px #2b2a2a;
+  text-shadow: 2px 2px rgba(43, 42, 42, 0.2);
 }

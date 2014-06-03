@@ -16,12 +16,12 @@ $lightgrey: rgba(43,42,42,0.2);
 	width: 120px;
 }
 @mixin boxshadows {
-	-webkit-box-shadow: 5px 5px $transblack2;
-	-moz-box-shadow: 5px 5px $transblack2;
-	box-shadow: 5px 5px $transblack2;
+	-webkit-box-shadow: 5px 5px $lightgrey;
+	-moz-box-shadow: 5px 5px $lightgrey;
+	box-shadow: 5px 5px $lightgrey;
 }
 @mixin textshadows {
-	text-shadow: 2px 2px $black;
+	text-shadow: 2px 2px $lightgrey;
 }
 //**************************************************************||
 //                         GLOBAL                               ||
@@ -44,14 +44,14 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	width: 1120px;
 	min-height: 100%;
 	margin: 20px auto;
-	background: $transblack2;
+	// background: $transblack2;
 	border-radius: 20px;
 }	
 
 body{
 	font-family: 'Varela Round', sans-serif;
 	// background: $white;
-	color: $white;
+	color: $black;
 }
 html {
 	background-image: url(../images/old_mathematics.png);
@@ -60,7 +60,7 @@ h1 {
 	font-size: 80px;
 	text-align: center;
 	padding: 30px 0;
-	text-shadow: 5px 5px $black;
+	text-shadow: 5px 5px $lightgrey;
 }
 
 //**************************************************************||
