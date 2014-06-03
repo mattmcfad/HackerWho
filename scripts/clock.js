@@ -1,7 +1,7 @@
 var seconds = 01;
 var minutes = 00;
 var milliseconds = 00;
-
+var countdown;
 var startedTimer = false;
 
 
@@ -12,7 +12,7 @@ $(".student").click(function(){
         //then start the timer
         startedTimer = true;
         //set an interval function to run every millisecond.
-        var countdown = window.setInterval(function() {
+        countdown = window.setInterval(function() {
             //update timer
             timer.text(minutes + ":" + seconds + ":" + milliseconds);
             //increment millisecond every interval

@@ -27,8 +27,10 @@ var app = {
 	gameCompletion: function() {
 		console.log("you win");
 		//stop timer
+		window.clearInterval(countdown);
 
 		//display background
+		
 
 		//modal box to post twitter score.
 	},
