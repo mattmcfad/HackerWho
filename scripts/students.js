@@ -123,7 +123,7 @@ var students = [
 	},
 	{
 		'id':16,
-		'name':'Meahgan',
+		'name':'Meagan',
 		'fact':'Her childhood idol was a superhero. <span class="clarificaiton">(She-Ra!)</span>',
 		'bigImg':'images/Meahgan-260x260.jpg', 
 		'match': '5' 

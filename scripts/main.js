@@ -98,7 +98,7 @@ var app = {
 			
 			//console.log("first click: " + studentObj.name);
 			
-			$('.student.id'+index).css('border','2px solid red');
+			$('.student.id'+index).css('border','3px solid red');
 
 			//fadeIn left
 			var selectedLeft = $('.selected.left');
@@ -136,9 +136,9 @@ var app = {
 			app.matchedPairs++;
 			
 			//indicate they have been selected
-			$('.student.id'+app.firstId).css('background','green').addClass('matched');
+			$('.student.id'+app.firstId).css('background','rgba(43,42,42,0.1)').css('border','none');
 
-			$('.student.id'+app.secondId).css('background','green').addClass('matched');
+			$('.student.id'+app.secondId).css('background','rgba(43,42,42,0.1)').css('border','none');
 			
 			//add both the id's to the matched array
 			//this signifies they have already been matched
