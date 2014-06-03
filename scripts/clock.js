@@ -1,5 +1,6 @@
-var seconds = 0;
-var minutes = 0;
+var seconds = 00;
+var minutes = 00;
+var milliseconds = 00;
 
 var startedTimer = false;
 
@@ -11,18 +12,19 @@ $(".student").click(function(){
         console.log("starting timer");
         startedTimer = true;
         var countdown = window.setInterval(function() { 
-        $(".clock p").text(seconds, minutes);
-        ++seconds;
+        $(".clock p").text(milliseconds, seconds, minutes);
+        ++milliseconds;
 
-            if (seconds == 60)
-                {seconds = 0;
-                minutes = minutes + 1; 
+            if (milliseconds == 60)
+                { milliseconds = 0;  
+                seconds = seconds ++; 
+                console.log(seconds)
             }
 
             else { 
-                minutes = minutes; 
+                seconds = seconds; 
             }
-        });
+        }, 1000);
     }
     else {
         console.log("you already started!");
