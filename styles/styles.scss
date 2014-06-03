@@ -87,13 +87,18 @@ h1 {
 //**************************************************************||
 //                         PHOTOGRID                            ||
 //**************************************************************||
-.photogrid {
+.overlay {
 	background: 
 	linear-gradient(
       rgba(42, 42, 42, 0.75), 
       rgba(42, 42, 42, 0.75)
     ),
     url(../images/classphoto.jpg) no-repeat center center;
+}	
+.nooverlay {
+	background: url(../images/classphoto.jpg) no-repeat center center;
+}
+.photogrid {
 	background-size: cover;
 	margin: 0 auto;
 	width: 720px;

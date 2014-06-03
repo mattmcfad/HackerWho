@@ -28,9 +28,8 @@ var app = {
 		console.log("you win");
 		//stop timer
 		window.clearInterval(countdown);
-
 		//display background
-		
+		$('div.photogrid').removeClass('overlay').addClass('nooverlay');
 
 		//modal box to post twitter score.
 	},
