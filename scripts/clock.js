@@ -13,17 +13,7 @@ $(".student").click(function(){
         startedTimer = true;
         //set an interval function to run every millisecond.
         countdown = window.setInterval(function() {
-            //update timer
-            timer.text(minutes + ":" + seconds + ":" + milliseconds);
-           
-            if ((seconds +'').length == 1) {
-             seconds = "0" + seconds;
-            }
-
-             if ((minutes +'').length == 1) {
-             minutes = "0" + minutes;
-            }
-
+ 
             //increment millisecond every interval
             milliseconds = milliseconds + 10;
             
@@ -31,13 +21,23 @@ $(".student").click(function(){
                 seconds++;
                 milliseconds = 0;
             }
-
-                
+               
             if(seconds === 60){
                 minutes++;
                 seconds = 0;
             }
-        
+
+            if ((seconds +'').length == 1) {
+                seconds = "0" + seconds;
+            }
+
+            if ((minutes +'').length == 1) {
+                minutes = "0" + minutes;
+            }
+
+            //update timer
+            timer.text(minutes + ":" + seconds + ":" + milliseconds);
+           
 
         }, 10);//run interval every 1 millisecond
 
