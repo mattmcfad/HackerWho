@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'digitalk';
+  src: url('digitalk-mono.eot'); /* IE9 Compat Modes */
+  src: url('digitalk-mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('digitalk-mono.woff') format('woff'), /* Modern Browsers */
+       url('digitalk-mono.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('digitalk-mono.svg#7247f91229e4fccb21ea2930d1819a4b') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

@@ -23,6 +23,21 @@ $lightgrey: rgba(43,42,42,0.2);
 @mixin textshadows {
 	text-shadow: 2px 2px $lightgrey;
 }
+
+$clock: 'digitalk';
+
+@font-face {
+  font-family: 'digitalk';
+  src: url('digitalk-mono.eot'); /* IE9 Compat Modes */
+  src: url('digitalk-mono.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('digitalk-mono.woff') format('woff'), /* Modern Browsers */
+       url('digitalk-mono.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('digitalk-mono.svg#7247f91229e4fccb21ea2930d1819a4b') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
 //**************************************************************||
 //                         GLOBAL                               ||
 //**************************************************************||
@@ -105,10 +120,10 @@ h1 {
       rgba(42, 42, 42, 0.75), 
       rgba(42, 42, 42, 0.75)
     ),
-    url(../images/classphoto.jpg) no-repeat center center;
+    url(../images/bg-Victory.JPG) no-repeat center center;
 }	
 .nooverlay {
-	background: url(../images/classphoto.jpg) no-repeat center center;
+	background: url(../images/bg-Victory.JPG) no-repeat center center;
 }
 .photogrid {
 	background-size: cover;
@@ -213,15 +228,22 @@ h1 {
 //                       CLOCK                                  ||
 //**************************************************************||
 .clock {
-	width: 30%;
+	width: 16%;
 	margin:0 auto;
 	clear: both;
+	height:auto;
+	border: 2px solid #005501;
+	margin-bottom:8px;
 	.innerclock {
+		
+		
 		p {
-			font-size: 30px;
+			font-size: 45px;
+			color:#005501;
 			text-align: left;
-			padding: 0;
+			padding:6px 0 0 7px;
 			@include textshadows;
+			font-family: $clock;
 		}
 	}
 } 
