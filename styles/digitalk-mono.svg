@@ -1,0 +1,57 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontPrep 20130207 at Tue Jun  3 23:20:20 2014
+ By Rayhan Vevaina
+Copyright (c) 2010 by asif ali rizvan. All rights reserved.
+</metadata>
+<defs>
+<font id="7247f91229e4fccb21ea2930d1819a4b" horiz-adv-x='1024' >
+  <font-face 
+    font-family="digitalk-mono"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="2 0 0 0 0 0 0 0 0 0"
+    ascent="1536"
+    descent="-512"
+    bbox="68 0 856 1364"
+    underline-thickness="102"
+    underline-position="-102"
+    unicode-range="U+0030-003A"
+  />
+<missing-glyph 
+d="M135 68h408v1228h-408v-1228zM68 0v1364h542v-1364h-542z" />
+    <glyph glyph-name=".notdef" 
+d="M135 68h408v1228h-408v-1228zM68 0v1364h542v-1364h-542z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="zero" unicode="0" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM223 1178v-353l-110 -112l-39 37v485zM670 1217h-445l-149 55q18 74 94 92h557zM74 154v485l39 37l110 -113v-352zM727 25h-559q-76 18 -94 92l149 57h447zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389z" />
+    <glyph glyph-name="one" unicode="1" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389z" />
+    <glyph glyph-name="two" unicode="2" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM670 1217h-445l-149 55q18 74 94 92h557zM74 154v485l39 37l110 -113v-352zM782 25h-614q-76 18 -94 92l149 57h504zM707 768l75 -74l-75 -73h-484l-73 73l73 74h484z" />
+    <glyph glyph-name="three" unicode="3" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM670 1217h-445l-149 55q18 74 94 92h557zM727 25h-559q-76 18 -94 92l149 57h447zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389zM707 768l75 -74l-75 -73h-484l-73 73l73 74h484z" />
+    <glyph glyph-name="four" unicode="4" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM223 1235v-410l-110 -112l-39 37v540zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389zM707 768l75 -74l-75 -73h-484l-73 73l73 74h484z" />
+    <glyph glyph-name="five" unicode="5" 
+d="M223 1178v-353l-110 -112l-39 37v485zM727 1217h-502l-149 55q18 74 94 92h612zM727 25h-559q-76 18 -94 92l149 57h447zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389zM707 768l75 -74l-75 -73h-484l-73 73l73 74h484z" />
+    <glyph glyph-name="six" unicode="6" 
+d="M223 1178v-353l-110 -112l-39 37v485zM727 1217h-502l-149 55q18 74 94 92h612zM74 154v485l39 37l110 -113v-352zM727 25h-559q-76 18 -94 92l149 57h447zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389zM707 768l75 -74l-75 -73h-484l-73 73l73 74h484z" />
+    <glyph glyph-name="seven" unicode="7" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM223 1178v-353l-110 -112l-39 37v485zM670 1217h-445l-149 55q18 74 94 92h557zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389z" />
+    <glyph glyph-name="eight" unicode="8" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM223 1178v-353l-110 -112l-39 37v485zM670 1217h-445l-149 55q18 74 94 92h557zM74 154v485l39 37l110 -113v-352zM727 25h-559q-76 18 -94 92l149 57h447zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389zM707 768
+l75 -74l-75 -73h-484l-73 73l73 74h484z" />
+    <glyph glyph-name="nine" unicode="9" 
+d="M707 825v392l57 147q74 -18 92 -92v-522l-37 -37zM223 1178v-353l-110 -112l-39 37v485zM670 1217h-445l-149 55q18 74 94 92h557zM727 25h-559q-76 18 -94 92l149 57h447zM819 676l37 -37v-522q-18 -74 -92 -92l-57 149v389zM707 768l75 -74l-75 -73h-484l-73 73l73 74
+h484z" />
+    <glyph glyph-name="colon" unicode=":" 
+d="M541 918h-150v149h150v-149zM541 248h-150v149h150v-149z" />
+  </font>
+</defs></svg>
