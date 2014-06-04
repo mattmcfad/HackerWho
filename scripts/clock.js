@@ -27,12 +27,7 @@ $(".student").click(function(){
             //increment millisecond every interval
             milliseconds = milliseconds + 10;
             
-<<<<<<< HEAD
-
-            if(milliseconds === 60){
-=======
             if(milliseconds === 1000){
->>>>>>> 7de46a77f50544906cf998cc902194c63036f078
                 seconds++;
                 milliseconds = 0;
             }
@@ -43,12 +38,9 @@ $(".student").click(function(){
                 seconds = 0;
             }
         
-<<<<<<< HEAD
-        }, 1);//run interval every 1 millisecond
 
-=======
         }, 10);//run interval every 1 millisecond
->>>>>>> 7de46a77f50544906cf998cc902194c63036f078
+
     }//if statement
 });
          
