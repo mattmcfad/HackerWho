@@ -16,9 +16,9 @@ $(".student").click(function(){
             //update timer
             timer.text(minutes + ":" + seconds + ":" + milliseconds);
             //increment millisecond every interval
-            milliseconds++;
+            milliseconds = milliseconds + 10;
             
-            if(milliseconds === 60){
+            if(milliseconds === 1000){
                 seconds++;
                 milliseconds = 0;
             }
@@ -28,7 +28,7 @@ $(".student").click(function(){
                 seconds = 0;
             }
         
-        }, 1);//run interval every 1 millisecond
+        }, 10);//run interval every 1 millisecond
     }//if statement
 });
 
