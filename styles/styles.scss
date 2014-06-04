@@ -249,3 +249,18 @@ h1 {
 } 
 //style .matched
 //cancelled out 
+
+//**************************************************************||
+//                       YOU WIN                                ||
+//**************************************************************||
+.youwin{
+	display:none;
+	//can be changed
+	font-size: 200px;
+	text-align: center;
+	height: 480px;
+	width:720px;
+	color:white;
+	//important to keep it in the window
+	position: absolute;
+}

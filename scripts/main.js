@@ -34,6 +34,8 @@ var app = {
 		window.clearInterval(countdown);
 		//display background
 		$('div.photogrid').removeClass('overlay').addClass('nooverlay');
+		$('div.youwin').delay(500).fadeIn(2000);
+
 
 
 		//modal box to post twitter score.
