@@ -7,6 +7,7 @@ $transblack2: rgba(43,42,42,0.4);
 $white: #F7F7F7;
 $transwhite: rgba(247,247,247,0.6);
 $lightgrey: rgba(43,42,42,0.2);
+$red: #C44162;
 
 //**************************************************************||
 //                         MIXINS                               ||
@@ -235,8 +236,6 @@ h1 {
 	border: 2px solid #005501;
 	margin-bottom:8px;
 	.innerclock {
-		
-		
 		p {
 			font-size: 45px;
 			color:#005501;
@@ -266,4 +265,56 @@ h1 {
 	color:white;
 	//important to keep it in the window
 	position: absolute;
+}
+//**************************************************************||
+//                       dialog                                 ||
+//**************************************************************||
+.ui-dialog {
+	color: white;
+	background: $transblack;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 1.5em;
+	h2 {
+		padding: 10px 20px;
+	}
+	p {
+		padding: 10px 20px;
+	}
+	.twitter-share-button {
+		display: block;
+		margin: 0 auto;
+		padding-left: 15px;
+	}
+}
+.ui-dialog-titlebar {
+	width: 100%;
+	background: black;
+	border-radius: 4px;
+	position: relative;
+	padding: 10px;
+}
+.ui-dialog-titlebar-close {
+	border-radius: 50%;
+	background: $red;
+	color: $white;
+	border: none;
+	outline: 0;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	&:hover {
+		color: $red;
+		background: $white;
+		border: none;
+		outline: 0;
+	} 
+}
+.youwin {
+	h2 {
+	}
+	p {
+	}
 }
