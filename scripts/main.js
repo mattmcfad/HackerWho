@@ -139,15 +139,12 @@ var app = {
 		$('.student').off();	
 
 		//if they match.
+		var match = false;
 		if (firstStudent.match === secondStudent.match){
-			
+			match=true;
 			app.matchedPairs++;
-			
-			//indicate they have been selected
-			$('.student.id'+app.firstId).css('background','rgba(43,42,42,0.1)');//.css('border','none');
-			$('.student.id'+app.secondId).css('background','rgba(43,42,42,0.1)');//.css('border','none');
-
-			
+			$('.selected img').addClass('bounce');
+						
 			//add both the id's to the matched array
 			//this allows us to test if an id has been matched in the click method
 			app.matchedIds.push(app.firstId);
@@ -155,6 +152,8 @@ var app = {
 		}
 		//else deselect both
 		else {
+			$('.selected.left img').addClass('itsAMatchLeft');
+			$('.selected.right img').addClass('itsAMatchRight');
 			//remove the selected border
 			//$('.student.id'+app.firstId).css('border','none');
 			//$('.student.id'+app.secondId).css('border','none');
@@ -162,11 +161,21 @@ var app = {
 
 		//delay next selection then re-enable event handlers.
 		setTimeout(function(){
+			if (match){
+				$('.student.id'+app.firstId).css('background','rgba(43,42,42,0.1)');//.css('border','none');
+				$('.student.id'+app.secondId).css('background','rgba(43,42,42,0.1)');//.css('border','none');
+				$('.selected img').removeClass('bounce');
+			}
+			else{
+				$('.selected.left img').removeClass('itsAMatchLeft');
+				$('.selected.right img').removeClass('itsAMatchRight');
+			}
 			$('.selected').css('opacity',0);	
 			$('.student.id'+app.firstId).css('border','none');
 			$('.student.id'+app.secondId).css('border','none');
 			app.enableHandlers();
-		}, 1000);
+
+		}, 1500);
 
 		//test game completion
 		if (app.matchedPairs === 12){

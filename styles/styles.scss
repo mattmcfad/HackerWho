@@ -266,6 +266,42 @@ h1 {
 	//important to keep it in the window
 	position: absolute;
 }
+
+.itsAMatchLeft{
+	animation: matchLeft 1s ;
+}
+@keyframes matchLeft{
+	0%{
+	transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.itsAMatchRight{
+	animation: matchRight 1s ;
+}
+
+@keyframes matchRight{
+	0%{
+	transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}
+
+.bounce{
+	animation: bounceIt 1s;
+}
+
+@keyframes bounceIt{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	75%{transform:scale(.8)}
+	100%{transform: scale(1);}
+}
 //**************************************************************||
 //                       dialog                                 ||
 //**************************************************************||
