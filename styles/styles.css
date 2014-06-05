@@ -346,9 +346,12 @@ h1 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003256}}
 .youwin {
   display: none;
-  font-size: 200px;
+  font-size: 60px;
   text-align: center;
   height: 480px;
   width: 720px;
   color: white;
   position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/BarbaraTarbox\/Dropbox\/Websites\/HackerWho\/styles\/styles\.scss}line{font-family:\00003260}}
+  .youwin h2 {
+    font-size: 100px; }

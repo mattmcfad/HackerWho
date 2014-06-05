@@ -27,20 +27,26 @@ var app = {
 		app.secondId = '';
 	},
 
+	getFinalTime: function(){
+		// this gets an array about the clock
+		var finalTime = $('.innerclock p');
+		//this prints the time from the array
+		$('span.finaltime').html(finalTime[0].innerHTML.substring(0,8));
+	},
 
-	//Upon game Completion
+	//Upon game completion
 	gameCompletion: function() {
 		//stop timer
 		window.clearInterval(countdown);
+		app.getFinalTime();
 		//display background
 		$('div.photogrid').removeClass('overlay').addClass('nooverlay');
-		$('div.youwin').delay(500).fadeIn(2000);
-
-
+		$('div.youwin').delay(200).fadeIn(2000);
 
 		//modal box to post twitter score.
 		// to do...
 	},
+
 
 	//Show a selected student after 1st or 2nd click
 	//@param id  - index of student
@@ -171,6 +177,9 @@ Array.prototype.contains = function ( needle ) {
    }
    return false;
 }
+
+
+
 
 $(function () {
 

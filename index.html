@@ -6,6 +6,11 @@
 		<link rel="stylesheet" href="styles/styles.css">
 		<link href='http://fonts.googleapis.com/css?family=Varela+Round:400,700' rel='stylesheet' type='text/css'>	
 	</head>
+	<style>
+	.youwin{
+
+	}
+	</style>
 	<body>
 		<div class="wrapper clearfix">	
 			<header class="clearfix">
@@ -27,7 +32,11 @@
 				</div><!-- selected left  -->				
 			</div>
 			<div class="photogrid overlay clearfix">
-				<div class="youwin"><p>YOU WIN!</p></div>
+				<div class="youwin">
+					<div id="dialog" title="Dialog Title">
+						<p><h2>Your time was <span class="finaltime"></span></h2>Post it!<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text= "Can you beat my score on HackerWho? cc:@thisishackeryou"></a></p>
+					</div>			
+				</div>
 				<div class="student id1" data-id="1"></div>
 				<div class="student selectedoverlay id2" data-id="2"></div>
 				<div class="student id3" data-id="3"></div>
@@ -70,6 +79,7 @@
 		<script src="scripts/main.js"></script>
 		<script src="scripts/students.js"></script>
 		<script src="scripts/clock.js"></script>
+		// <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 	</body>
 </html>
