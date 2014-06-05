@@ -35,8 +35,9 @@ $(".student").click(function(){
                 minutes = "0" + minutes;
             }
 
+            
             //update timer
-            timer.text(minutes + ":" + seconds + ":" + milliseconds);
+            timer.text(minutes + ":" + seconds + ":" + milliseconds.toString().substring(0,2));
            
 
         }, 10);//run interval every 1 millisecond
