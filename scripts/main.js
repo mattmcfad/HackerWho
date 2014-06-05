@@ -45,6 +45,16 @@ var app = {
 
 		//modal box to post twitter score.
 		// to do...
+		
+    	$( "#dialog" ).dialog({
+    		maxHeight: 330,
+    		maxWidth: 500,
+    		modal: true,
+    		position: "center",
+    		title: "You win!",
+    		closeText: "X"
+    	});
+  		
 	},
 
 
