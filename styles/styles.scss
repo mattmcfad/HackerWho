@@ -348,9 +348,20 @@ h1 {
 		outline: 0;
 	} 
 }
-.youwin {
-	h2 {
-	}
-	p {
+
+//**************************************************************||
+//                       Credits                                ||
+//**************************************************************||
+
+
+p.credits {
+	display: block;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 15px;
+
+	a {
+		text-decoration: none;
+		color: #005501;
 	}
 }
