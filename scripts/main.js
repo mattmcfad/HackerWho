@@ -39,21 +39,24 @@ var app = {
 		//stop timer
 		window.clearInterval(countdown);
 		app.getFinalTime();
-		//display background
-		$('div.photogrid').removeClass('overlay').addClass('nooverlay');
-		$('div.youwin').delay(200).fadeIn(2000);
 
-		//modal box to post twitter score.
-		// to do...
-		
-    	$( "#dialog" ).dialog({
-    		maxHeight: 330,
-    		maxWidth: 500,
-    		modal: true,
-    		position: "center",
-    		title: "You win!",
-    		closeText: "X"
-    	});
+		setTimeout(function(){
+			//display background
+			$('div.photogrid').removeClass('overlay').addClass('nooverlay');
+
+			//modal box to post twitter score.
+			// to do...
+			
+	    	$( "#dialog" ).fadeIn(1500).dialog({
+	    		maxHeight: 330,
+	    		maxWidth: 500,
+	    		modal: true,
+	    		position: "center",
+	    		title: "You win!",
+	    		closeText: "X"
+	    	});
+			
+		}, 1750);
   		
 	},
 
